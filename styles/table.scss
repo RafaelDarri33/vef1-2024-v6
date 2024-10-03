@@ -1,0 +1,92 @@
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  margin-bottom: var(--spacing);
+  border-spacing: 0;
+
+  th,
+  td {
+    padding: calc(var(--spacing) / 2);
+    text-align: left;
+  }
+
+  tr {
+    th:first-child,
+    td:first-child {
+      border-top-left-radius: var(--border-radius-regular);
+      border-bottom-left-radius: var(--border-radius-regular);
+    }
+
+    th:last-child,
+    td:last-child {
+      border-top-right-radius: var(--border-radius-regular);
+      border-bottom-right-radius: var(--border-radius-regular);
+    }
+
+    &:nth-child(2n + 1) {
+      background-color: var(--color-background-secondary);
+    }
+  }
+
+  img {
+    width: 100%;
+    min-width: var(--min-width-image);
+    max-width: var(--max-width-image);
+  }
+
+  td:last-child {
+    white-space: nowrap;
+  }
+}
+
+/** Viðburðir **/
+.event {
+  clear: left;
+  width: 100%;
+  margin-bottom: calc(var(--spacing) * 2);
+
+  .title {
+    margin-bottom: var(--spacing);
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  img {
+    float: left;
+    margin-right: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+
+  .register {
+    clear: both;
+  }
+}
+
+/** Skráningarform **/
+fieldset {
+  border: 0;
+
+  legend {
+    margin-bottom: var(--spacing);
+    font-size: var(--font-size-headings);
+  }
+
+  input,
+  select,
+  textarea {
+    padding: calc(var(--spacing) * 0.5);
+    width: 100%;
+    border: var(--border-regular);
+    background-color: var(--color-background-form);
+  }
+
+  input[type="checkbox"] {
+    display: inline-block;
+    margin-right: calc(var(--spacing) * 0.5);
+    width: auto;
+  }
+}
