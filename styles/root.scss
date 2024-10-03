@@ -3,9 +3,7 @@ root {
   --font-size-headings: 1.5rem; /* Grunn bilið okkar er 1rem == 16px */
   --spacing: 1rem; /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
   --vertical-space: calc(var(--gutter) * 1);
-  --vertical-space-large: calc(
-    var(--gutter) * 1.5
-  ); /* Hámarks og lágmarks breidd á efni */
+  --vertical-space-large: calc(var(--gutter) * 1.5); /* Hámarks og lágmarks breidd á efni */
   --max-width: 1200px;
   --min-width-image: 200px;
   --max-width-image: 300px;
